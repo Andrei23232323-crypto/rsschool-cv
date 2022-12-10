@@ -9,12 +9,13 @@
 ## About Me
 I am a fast learner. I am able to work in a team. For many years I have been engaged in setting up advertising and promoting our brand.</br> I want to develop further, so I began to actively learn JS.
 ## Skills
-*JavaScript (in progress)
-*HTML
-*CSS
-*Adwords
-*Promotion landing page
+*JavaScript (in progress)</br>
+*HTML</br>
+*CSS</br>
+*Adwords</br>
+*Promotion landing page</br>
 ## Code example
+Define String.prototype.toAlternatingCase such that each lowercase letter becomes uppercase and each uppercase letter becomes lowercase:
 ```
 String.prototype.toAlternatingCase = function () {
 
@@ -34,3 +35,7 @@ String.prototype.toAlternatingCase = function () {
 ```
 ## Education
 *BSUIR design engineer
+## Languages
+*Russian (Native)</br>
+*English</br>
+*Polish (In progress)
