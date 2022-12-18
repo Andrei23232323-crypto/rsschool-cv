@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CV Sobaleu</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/img/favicon.ico">
+</head>
+<body class="main-body">
+
+  <header class="main-header">
+    <nav>
+      <ul class="nav-menu">
+        <li><a class="nav-link" href="#info">Short info</a></li>
+        <li><a class="nav-link" href="#about">About me</a></li>
+        <li><a class="nav-link" href="#code">Code</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="info" class="main-block">
+      <header>
+        <img class="photo" src="assets/img/photo.jpg" width="250" height="250" alt="my photo">
+      </header>
+      <div class="main-info">
+        <h1>Andrei Sobaleu</h1>
+        <a class="link" href="https://www.codewars.com/users/kepo4ka">
+          <img src="assets/img/codewars.png" width="75" height="75" alt="codewars">
+          <p>
+            Codewars
+          </p>
+        </a>
+        <a class="link" href="https://github.com/Andrei23232323-crypto">
+          <img src="assets/img/github.svg" width="75" height="75" alt="github">
+          <p>
+            GitHub
+          </p>
+        </a>
+      </div>
+    </section>
+    <section class="about-block">
+      <div>
+        <h2 class="title">Contacts</h2>
+        <ul class="contacts-menu">
+          <li class="list-info">
+            <img src="assets/img/phone.png" width="25" height="25" alt="phone">
+            <a class="contacts-link" href="tel:+48515245711">
+              +48 515-245-711
+            </a>
+          </li>
+          <li class="list-info">
+            <img src="assets/img/telegram.webp" width="25" height="25" alt="telegram">
+            <a class="contacts-link" href="https://t.me/AB_Assen">
+              @AB_Assen
+            </a>
+          </li>
+          <li class="list-info">
+            <img src="assets/img/discord.svg" width="25" height="25" alt="discord">
+            <a class="contacts-link" href="https://discordapp.com/users/675672338104188928/">
+              Kepo4ka#3718
+            </a>
+          </li>
+          <li class="list-info">
+            <img src="assets/img/mail.png" width="25" height="25" alt="mail">
+            <a class="contacts-link" href="mailto:felbb4@gmail.com">
+              Felbb4@gmail.com
+            </a>
+          </li>
+          <li class="list-info">
+            <img src="assets/img/geo.png" width="25" height="25" alt="country">
+            <a class="contacts-link" href="https://goo.gl/maps/t6ZHw3PGmwBEPA2Q9">
+              Poland
+            </a>
+          </li>
+        </ul>
+        <h2 class="title">Skills</h2>
+        <ul class="contacts-menu">
+          <li class="list-info skills">HTML</li>
+          <li class="list-info skills">CSS</li>
+          <li class="list-info skills">JavaScript  (in progress)</li>
+          <li class="list-info skills">Adwords</li>
+          <li class="list-info skills">Direct</li>
+          <li class="list-info skills">Promotion landing page</li>
+        </ul>
+        <h2 class="title">Education</h2>
+        <ul class="contacts-menu">
+          <li class="list-info skills">BSUIR design engineer</li>
+          <li class="list-info skills">Minsk State Radio Engineering College</li>
+        </ul>
+        <h2 class="title">Languages</h2>
+        <ul class="contacts-menu">
+          <li class="list-info skills">Russian (Native)</li>
+          <li class="list-info skills">English (A1)</li>
+          <li class="list-info skills">Polish (In progress)</li>
+        </ul>
+      </div>
+      <div id="about">
+        <h2 class="title">About me</h2>
+        <p class="paragraph">I am a fast learner. I am able to work in a team. For many years I have been engaged in
+          setting up advertising and promoting our brand.
+          I want to develop further, so I began to actively learn JS.</p>
+        <h2 id="code" class="title">Code example</h2>
+        <div class="code">
+          <pre>
+          <code>
+String.prototype.toAlternatingCase = function () {
+
+let nowStr = '';
+let arr = this.split('');
+
+  for (let sim of arr) {
+    if (sim === sim.toUpperCase()) {
+      nowStr += sim.toLowerCase();
+    } else {
+      nowStr += sim.toUpperCase();
+    }
+  }
+  return (nowStr);
+}
+          </code>
+        </pre>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <nav>
+      <ul class="nav-menu">
+        <li class="footer-nav">
+          <a class="link" href="https://github.com/Andrei23232323-crypto">
+            <img src="assets/img/github.svg" width="35" height="35" alt="github">
+            GitHub
+          </a>
+        </li>
+        <li class="link footer-nav">
+          2022
+        </li>
+        <li class="footer-nav">
+          <a class="link" href="https://rs.school/js/">
+            <img src="assets/img/rs_school_js.svg" height="35" alt="logo RS_School">
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+</html>
