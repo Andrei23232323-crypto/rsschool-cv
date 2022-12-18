@@ -1,3 +1,145 @@
-body {
+html {
+    scroll-behavior: smooth;
+}
 
+.main-body {
+    margin: 0 auto;
+    max-width: 1024px;
+    min-height: 100vh;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-header {
+    border: 1px solid red;
+    background-color: #292929;
+
+}
+
+.main-block {
+    border: 1px solid red;
+    background-color: #292929;
+    display: flex;
+}
+
+.about-block {
+    border: 1px solid red;
+    background-color: #292929;
+    display: flex;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+}
+
+.contacts-menu {
+    list-style: none;
+    margin: 10px 60px;
+}
+
+.contacts-link {
+    color: #f5e642;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.contacts-link:hover {
+    color: #808080;
+}
+
+.list-info {
+    margin: 10px 0;
+}
+
+.code {
+    color: #808080;
+    background-color: #fff;
+    font-size: 15px;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.footer-nav {
+    margin: auto;
+}
+
+.code pre {
+    margin: 0;
+    font-size: 0;
+}
+
+.code pre code {
+    font-size: 16px;
+}
+
+.main-block .main-info .link {
+    text-align: center;
+    margin: 30px 0 0 0;
+}
+
+.main-block .main-info .link p {
+    margin: 10px 30px 0 30px;
+}
+
+.nav-link {
+    padding: 0 5px 0 15px;
+    color: #f5e642;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 20px;
+
+}
+
+.nav-link:hover {
+    color: #808080;
+}
+
+.link {
+    color: #f5e642;
+    text-decoration: none;
+    font-size: 30px;
+    display: inline-block;
+}
+
+.link:hover {
+    color: #808080;
+}
+
+.paragraph {
+    color: #808080;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.title {
+    font-size: 40px;
+    color: #fff;
+    margin: 20px 100px;
+    font-variant: small-caps;
+}
+
+.skills {
+    color: #f5e642;
+    font-size: 20px;
+}
+
+.photo {
+    margin: 20px 100px;
+    border-radius: 10px;
+}
+
+.main-info > h1 {
+    font-size: 50px;
+    font-variant: small-caps;
+    text-decoration: underline;
+    margin: 20px auto;
+    color: #f5e642;
+}
+
+.footer {
+    background-color: #363636;
 }
