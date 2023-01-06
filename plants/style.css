@@ -264,6 +264,7 @@ nav {
     border-radius: 0 0 20px 20px;
     margin-top: -6px;
     text-align: center;
+    padding-bottom: 33px;
 }
 
 .title-item-service {
@@ -274,6 +275,7 @@ nav {
     color: #E06733;
     margin-top: 11px;
     letter-spacing: 0.3px;
+    margin-bottom: 14px;
 }
 
 .subtitle-item-service {
@@ -500,13 +502,16 @@ footer {
 }
 
 .footer-link-1 {
-    padding: 0 14px 0 42px;
+    padding: 0 20px 0 44px;
 }
 
 .footer-link-n {
-    padding-right: 14px;
+    padding-right: 20px;
 }
 
 footer div ul {
     margin-top: 5%;
+    display: flex;
+    margin-left: 20%;
+    list-style: none;
 }
