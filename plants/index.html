@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Plants</title>
     <link rel="stylesheet" href="style.css">
     <script src="index.js"></script>
@@ -13,7 +14,28 @@
             <img class="vector_1" src="assets/img/logo_vector.svg" alt="logo">
             <span>Plants</span>
         </div>
-        <nav>
+        <div class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <!--<div class="burger-menu">
+            <img class="active" src="assets/img/burger.svg">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
+        </div>-->
+
+        <!--<div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#price">Price</a></li>
+                </ul>
+            </nav>
+        </div>-->
+
+        <nav class="nav-menu-desktop">
             <ul class="nav-menu">
                 <li>
                     <a class="nav-link" href="#home">Home</a>
@@ -32,6 +54,17 @@
                 </li>
             </ul>
         </nav>
+        <div class="menu" onclick="closeBurger()">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#price">Price</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
@@ -62,7 +95,7 @@
                         the leap into electronic typesetting, remaining essentially unchanged.
                     </p>
                 </div>
-                <div>
+                <div class="houseplant">
                     <img class="img-about" src="assets/img/houseplant.png" alt="houseplant">
                 </div>
             </div>
@@ -79,44 +112,50 @@
             </div>
             <div class="cards-service">
                 <figure class="figure-service">
-                    <img src="assets/img/item-1.png" alt="item-1">
+                    <img class="img_desktop" src="assets/img/item-1.png" alt="item-1">
+                    <img class="img_plan" src="assets/img/item-plan-1.png" alt="item-1">
                     <div class="border-items-service">
                         <p class="title-item-service title-item-service1">Garden care</p>
                         <span class="subtitle-item-service">Lorem Ipsum has been the industry</span>
                     </div>
                 </figure>
                 <figure class="figure-service">
-                    <img src="assets/img/item-2.png" alt="item-2">
+                    <img class="img_desktop" src="assets/img/item-2.png" alt="item-2">
+                    <img class="img_plan" src="assets/img/item-plan-2.png" alt="item-2">
                     <div class="border-items-service">
                         <p class="title-item-service title-item-service2">Planting</p>
                         <span class="subtitle-item-service">Lorem Ipsum has been the industry</span>
                     </div>
                 </figure>
                 <figure class="figure-service">
-                    <img src="assets/img/item-3.png" alt="item-3">
+                    <img class="img_desktop" src="assets/img/item-3.png" alt="item-3">
+                    <img class="img_plan" src="assets/img/item-plan-3.png" alt="item-3">
                     <div class="border-items-service">
                         <p class="title-item-service title-item-service3">Lawn care</p>
                         <span class="subtitle-item-service">Lorem Ipsum has been the industry</span>
                     </div>
                 </figure>
                 <figure class="figure-service-bottom">
-                    <img src="assets/img/item-4.png" alt="item-4">
+                    <img class="img_desktop" src="assets/img/item-4.png" alt="item-4">
+                    <img class="img_plan" src="assets/img/item-plan-4.png" alt="item-4">
                     <div class="border-items-service">
-                        <p class="title-item-service">Planting</p>
+                        <p class="title-item-service title-item-service4">Planting</p>
                         <span class="subtitle-item-service">Lorem Ipsum has been the industry</span>
                     </div>
                 </figure>
                 <figure class="figure-service-bottom">
-                    <img src="assets/img/item-5.png" alt="item-5">
+                    <img class="img_desktop" src="assets/img/item-5.png" alt="item-5">
+                    <img class="img_plan" src="assets/img/item-plan-5.png" alt="item-5">
                     <div class="border-items-service">
-                        <p class="title-item-service">Garden care</p>
+                        <p class="title-item-service title-item-service5">Garden care</p>
                         <span class="subtitle-item-service">Lorem Ipsum has been the industry</span>
                     </div>
                 </figure>
                 <figure class="figure-service-bottom">
-                    <img src="assets/img/item-6.png" alt="item-6">
+                    <img class="img_desktop" src="assets/img/item-6.png" alt="item-6">
+                    <img class="img_plan" src="assets/img/item-plan-6.png" alt="item-6">
                     <div class="border-items-service">
-                        <p class="title-item-service">Planting</p>
+                        <p class="title-item-service title-item-service6">Planting</p>
                         <span class="subtitle-item-service">Lorem Ipsum has been the industry</span>
                     </div>
                 </figure>
