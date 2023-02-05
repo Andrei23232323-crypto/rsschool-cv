@@ -306,6 +306,7 @@ nav {
 
 .figure-service {
     margin-bottom: 40px;
+    transition: all 1s ease-out;
 }
 
 .figure-service-bottom {
@@ -358,12 +359,13 @@ h3 span {
     font-size: 20px;
     line-height: 20px;
     background: #EDF2EC;
-    margin: 17px 0;
+    margin: 17px 0 0 0;
     padding: 15px 0 13px 16%;
     border-radius: 20px;
     text-align: start;
     position: relative;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
 .accordion-item-1 {
@@ -433,6 +435,7 @@ h3 span {
 }
 
 .accordion-contacts {
+    position: relative;
     font-family: 'Inter';
     font-weight: 400;
     font-size: 20px;
@@ -441,7 +444,7 @@ h3 span {
     width: 32%;
 }
 
-.accordion-contacts div {
+.accordion-contacts .dropdown {
     background: #D6E7D2;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 0px;
@@ -452,7 +455,7 @@ h3 span {
     cursor: pointer;
 }
 
-.accordion-contacts div::after {
+/*.accordion-contacts div::after {
     content: url(assets/img/arrow_wite.png);
     right: 34px;
     top: 19px;
@@ -462,7 +465,7 @@ h3 span {
     font-size: 0;
     line-height: 0;
     padding: 7px 6px;
-}
+}*/
 
 .accordion-contacts div span {
     padding-left: 19px;
@@ -1294,4 +1297,178 @@ footer div ul {
     .footer-link-n {
         padding-right: 15px;
     }
+}
+
+.blur-elem {
+    transition: all 1s ease-out;
+    filter: blur(3px);
+}
+
+.active-button-service {
+    color: #fff;
+    background: #E06733;
+}
+
+.accordion-content {
+    background-color: #edf2ec;
+    border-radius: 0 0 20px 20px;
+    padding: 0 42px;
+    text-align: justify;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+}
+
+.accordion-content .price-title {
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 10px;
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: 1px solid #AEA1A1;
+    color: #717171;
+}
+
+.accordion-content .price-subscribe {
+    margin: 10px 0;
+}
+
+.accordion-content .price-coast {
+   color: #E06733;
+    font-weight: 900;
+}
+
+.accordion-content .price-order-button {
+    width: 86px;
+    margin: 10px 0;
+    background-color: #fff;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 3px 0;
+}
+
+.is-open {
+    border-radius: 20px 20px 0 0;
+}
+
+.accordion-item.is-open:after {
+    rotate: 180deg;
+}
+
+
+
+.accordion-contacts .dropdown {
+    margin: 0;
+    padding: 0;
+}
+
+
+.dropdown__switch:checked + .dropdown__options-filter .dropdown__select {
+    list-style: none;
+    transform: scaleY(1);
+    z-index: 99;
+}
+.dropdown__switch:checked + .dropdown__options-filter .dropdown__filter:after {
+    transform: rotate(-135deg);
+}
+.dropdown__options-filter {
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+}
+.dropdown__filter {
+    background-color: #C1E698;
+    position: relative;
+    display: flex;
+    padding: 20px;
+    margin: 0;
+    color: #595959;
+    border: 1px solid #d6d6d6;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: 0.3s;
+    list-style: none;
+}
+.dropdown__filter:focus {
+    border: 1px solid #918FF4;
+    outline: none;
+    box-shadow: 0 0 5px 3px #918FF4;
+}
+.dropdown__filter::after {
+    position: absolute;
+    top: 45%;
+    right: 20px;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid #595959;
+    border-bottom: 2px solid #595959;
+    transform: rotate(45deg) translateX(-45%);
+    transition: 0.2s ease-in-out;
+}
+.dropdown__select {
+    background-color: #DCE9D9;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    margin-top: 5px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px 0 rgba(152, 152, 152, 0.6);
+    transform: scaleY(0);
+    transform-origin: top;
+    font-weight: 300;
+    transition: 0.2s ease-in-out;
+}
+.dropdown__select-option {
+    padding: 20px;
+    border-bottom: 1px solid #d6d6d6;
+    transition: 0.3s;
+}
+.dropdown__select-option:last-of-type {
+    border-bottom: 0;
+}
+.dropdown__select-option:hover {
+    background-color: #f9f9f9;
+}
+
+.accordion-contacts .shop-data {
+    bottom: 10%;
+    position: absolute;
+    padding: 30px 20px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    display: none;
+}
+
+.accordion-contacts .shop-data .data-row .shop-title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 40px;
+    color: #000;
+}
+
+.accordion-contacts .shop-data .data-row .shop-info {
+    color: #717171;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.accordion-contacts .shop-data .call-us-btn {
+    width: 150px;
+    margin: 20px auto 0;
+    border: 1px solid #000;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.accordion-contacts .shop-data .call-us-btn a {
+    padding: 0;
+    color: inherit;
+    text-decoration: inherit;
 }
